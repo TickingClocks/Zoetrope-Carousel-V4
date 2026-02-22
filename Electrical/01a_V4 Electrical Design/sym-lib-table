@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "zoetrope_V4")(type "KiCad")(uri "${KIPRJMOD}/zoetrope_V4.kicad_sym")(options "")(descr ""))
+)

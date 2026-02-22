@@ -1,0 +1,425 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "6293f612-ad61-4760-ad66-c804a0624dd1")
+	(paper "A4")
+	(lib_symbols)
+	(text "Animation Platter V4\n\nThis project is inspired by zoatropes. \n\nA NEMA17 stepper motor or BLDC motor is used to spin an \nanimation platter. Above the animation platter is an array of\nmany bright LEDs. the LEDs provide the \"stroboscopic effect\" by\nstrobing the lights at a frequency predetermined by the frame count\nof the animation platter. The strobe can be regular or irregular\nin sync with the physical features and rotation speed of the\nanimation platter. This creates the illusion of 3D animation/motion.\n\nThe BLDC motor is driven with a standard hobby grade BLDC driver.\nThe ESC must be able to spin the motor both directions. The \ncommunicaiton output is PWM. Using a BLDC motor allows for \nmuch higher speeds. The communcation interface is 5V. Motor voltage\nis 12V\n\nThe NEMA17 is driven by a TMC2209 silent stepper driver. The \ndriver is controlled through GPIO pins only. The GPIO can be driven\nby using timers for smooth operation. Physical gearing of the stepper \nmotor can enable achieving higher RPMs. The GPIO, with exception of the\nstep pin, is driven by an I2C I/O expansion chip.\n\nThe standard strobe LEDs are driven by a mosfet. The output connector \nis supplied with +12V supplied by VR1. There is also a neopixel output \nthat can be used for the strobe lights. The connector extends the \nneopixel line that already exists on the PCB.\n\nThe primary microcontroller is a STM32F446RET. There are two secondary\nmicrocontrollers. One for each AMOLED screen. Each AMOLED screen is \ndriven by an ESP32 microcontroller. Between each ESP32 and the STM32\nis a dedicated UART line. The ESP 32 microcontrollers have  built-in\nRTC and IMUs. They also have breakout interfaces for aditional sensors\nif desired in the future. The ESP32 addition offloads graphics processing\nand driving and allows the STM32 to be dedicated to zoetrope functions.\n\nInterfacing with the system is done with three toggle switches,\nan encoder with a button, a potentiometer and two button. The AMOLED \ndisplays support touch input. There is an additional I/O expansion chip\nfor unplanned I/O additions. Status is indicated with four NeoPixel LEDs,\ntwo full-color AMOLED displays, and three SMD LEDs for the STM32 \nmicrocontroller, red, green and blue"
+		(exclude_from_sim no)
+		(at 23.368 103.632 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "48a07f44-afe6-4f75-b8db-94739bc2fd41")
+	)
+	(sheet
+		(at 207.01 68.58)
+		(size 24.13 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0d547ffc-44e6-49d1-91af-d87b51f567ce")
+		(property "Sheetname" "NeoPixel LEDs"
+			(at 211.074 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Display and LEDs.kicad_sch"
+			(at 207.01 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "13"
+			(at 229.362 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 233.68 68.58)
+		(size 24.13 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1babb09c-3418-42a0-9f5a-33b9a7088d2e")
+		(property "Sheetname" "I2C"
+			(at 243.586 68.072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "I2C RTC.kicad_sch"
+			(at 233.68 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "14"
+			(at 256.032 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 214.63 86.36)
+		(size 36.83 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "40651ff0-c37d-4608-8bcc-873795bf4780")
+		(property "Sheetname" "ESP23 Displays"
+			(at 225.806 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32 Displays.kicad_sch"
+			(at 214.63 99.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "20"
+			(at 249.428 97.536 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 213.36 33.02)
+		(size 36.83 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "43dc24fa-5df0-45bf-bc45-3f2b9efdcc1f")
+		(property "Sheetname" "Main Microcontroller"
+			(at 231.902 32.258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Sheetfile" "Microcontroller.kicad_sch"
+			(at 213.36 46.3046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "sheetNumber" "10"
+			(at 248.412 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 214.63 104.14)
+		(size 36.83 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "78f2a9c1-35be-4926-bfa8-99d26f1ffdf7")
+		(property "Sheetname" "Power"
+			(at 229.362 103.632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 214.63 118.1866 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "30"
+			(at 249.428 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "30")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 207.01 50.8)
+		(size 24.13 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dd4c35ab-e025-4cfe-9a78-605a270d4a30")
+		(property "Sheetname" "Motor & Strobe LEDs"
+			(at 209.296 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Motor & LEDs_sch.kicad_sch"
+			(at 207.01 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "11"
+			(at 229.362 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 214.63 121.92)
+		(size 38.1 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e7fa4b9b-7da5-430b-82c8-3eb99bf7d4d5")
+		(property "Sheetname" "Connectors"
+			(at 227.33 121.412 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 214.63 135.7126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "40"
+			(at 250.698 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "40")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 233.68 50.8)
+		(size 24.13 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ffbe476a-0bba-4e7d-961a-247911f03fa9")
+		(property "Sheetname" "Interface"
+			(at 241.808 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Interface.kicad_sch"
+			(at 233.68 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "value" "12"
+			(at 256.032 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
