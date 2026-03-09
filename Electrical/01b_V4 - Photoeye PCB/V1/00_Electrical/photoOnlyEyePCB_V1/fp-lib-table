@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "photoeye_pcb")(type "KiCad")(uri "C:/Users/kwhit/Desktop/projects/github Animation Platter V4/zoetrope-carousel-v4/Electrical/01b_V4 - Photoeye PCB/V1/00_Electrical/KiCAD Library/footprints/photoeye_pcb.pretty")(options "")(descr ""))
+)
