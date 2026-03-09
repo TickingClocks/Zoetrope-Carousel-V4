@@ -58,20 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_issues|114887500|98900000|14d5d7a0-4e9f-4a16-bc23-c9f679280965|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|122750000|99400000|7dea96ac-4ce3-4d72-ad58-37be1e16f3b0|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|127500000|100800000|0e02f241-8be1-4761-9960-80c29c5e0987|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -630,7 +617,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "C:/Users/kwhit/Desktop/projects/github Animation Platter V4/zoetrope-carousel-v4/Electrical/01b_V4 - Photoeye PCB/V1/01_Electrical Plots/schematic/",
+    "plot_directory": "C:/Users/kwhit/Desktop/projects/github Animation Platter V4/zoetrope-carousel-v4/Electrical/01b_V4 - Photoeye PCB/V1/01_Electrical Plots/00_photoOnlyEye/schematic/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",

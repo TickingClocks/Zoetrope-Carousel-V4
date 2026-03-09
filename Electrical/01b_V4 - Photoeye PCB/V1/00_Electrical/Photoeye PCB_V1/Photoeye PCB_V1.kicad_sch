@@ -1046,25 +1046,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "IC"
-				(at 26.67 7.62 0)
+			(property "Reference" "U1"
+				(at 15.24 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Value" "LM293ST"
-				(at 26.67 5.08 0)
+				(at 15.24 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "SOP65P490X110-8N"
+			(property "Footprint" "photoeye_pcb:LM293ST"
 				(at 26.67 -94.92 0)
 				(effects
 					(font
@@ -1152,7 +1150,7 @@
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -1306,25 +1304,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 16.51 7.62 0)
+			(property "Reference" "U2"
+				(at 10.16 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Value" "RPR-220"
-				(at 16.51 5.08 0)
+				(at 10.16 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "RPR220"
+			(property "Footprint" "photoeye_pcb:RPR220"
 				(at 16.51 -94.92 0)
 				(effects
 					(font
@@ -1412,7 +1408,7 @@
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -1816,16 +1812,16 @@
 		(uuid "724a3d39-9863-4c84-9e10-bd147a1eeaaa")
 	)
 	(junction
+		(at 170.18 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75a2321c-a041-4409-b930-cb60f0c64ac6")
+	)
+	(junction
 		(at 198.12 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8007d7c8-1aae-45d4-b541-d95039854085")
-	)
-	(junction
-		(at 172.72 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84e6c769-9379-4c1d-b929-e164d015c94c")
 	)
 	(junction
 		(at 137.16 78.74)
@@ -1903,6 +1899,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 82.55) (xy 175.26 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ef4618-f500-4eac-8a92-9cf5db377f42")
+	)
+	(wire
+		(pts
 			(xy 227.33 81.28) (xy 227.33 86.36)
 		)
 		(stroke
@@ -1910,6 +1916,16 @@
 			(type default)
 		)
 		(uuid "1dbda350-fd69-48ab-ae25-a12f22f8fce0")
+	)
+	(wire
+		(pts
+			(xy 172.72 68.58) (xy 172.72 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e2158d6-2b27-4a5b-9f4b-7f4ec9a85ae9")
 	)
 	(wire
 		(pts
@@ -1940,16 +1956,6 @@
 			(type default)
 		)
 		(uuid "20e44ac8-79ac-4e8a-a403-c198f3c866ef")
-	)
-	(wire
-		(pts
-			(xy 172.72 87.63) (xy 181.61 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "229ba3b0-350e-4266-94c1-5d960a115c3e")
 	)
 	(wire
 		(pts
@@ -2093,13 +2099,13 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 80.01) (xy 172.72 68.58)
+			(xy 175.26 80.01) (xy 170.18 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c28e3ec-9c2b-4d85-a72e-afcaf96a27a4")
+		(uuid "635986c2-9b90-4e05-a3be-18479661e312")
 	)
 	(wire
 		(pts
@@ -2143,16 +2149,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 82.55) (xy 172.72 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cf5dc26-2219-4587-9e0b-68bcf2d382f0")
-	)
-	(wire
-		(pts
 			(xy 219.71 95.25) (xy 219.71 101.6)
 		)
 		(stroke
@@ -2173,7 +2169,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 87.63) (xy 172.72 87.63)
+			(xy 156.21 87.63) (xy 170.18 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2183,7 +2179,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 82.55) (xy 172.72 87.63)
+			(xy 170.18 80.01) (xy 170.18 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2210,6 +2206,16 @@
 			(type default)
 		)
 		(uuid "93be8fd4-1bcd-41f3-a13e-b1f4f7d60672")
+	)
+	(wire
+		(pts
+			(xy 170.18 87.63) (xy 181.61 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94a13e23-4430-4e68-a756-93ff5f5e18ef")
 	)
 	(wire
 		(pts
@@ -2440,16 +2446,6 @@
 			(type default)
 		)
 		(uuid "e3ea4d96-9247-40d1-92a7-547f6dba2fd4")
-	)
-	(wire
-		(pts
-			(xy 175.26 80.01) (xy 172.72 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8a5346c-67eb-4857-988b-69bb7afa6e13")
 	)
 	(wire
 		(pts
@@ -5029,7 +5025,7 @@
 		(uuid "31a45ef8-1fcc-42be-9bb7-0e8c04aad765")
 	)
 	(label "platterSensor"
-		(at 158.75 87.63 0)
+		(at 156.21 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)

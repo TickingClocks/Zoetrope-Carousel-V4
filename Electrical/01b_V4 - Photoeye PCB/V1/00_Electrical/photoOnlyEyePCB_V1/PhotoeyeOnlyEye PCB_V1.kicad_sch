@@ -574,25 +574,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 16.51 7.62 0)
+			(property "Reference" "U2"
+				(at 10.16 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Value" "RPR-220"
-				(at 16.51 5.08 0)
+				(at 10.16 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "RPR220"
+			(property "Footprint" "photoeye_pcb:RPR220"
 				(at 16.51 -94.92 0)
 				(effects
 					(font
@@ -680,7 +678,7 @@
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -1034,10 +1032,10 @@
 		(uuid "8007d7c8-1aae-45d4-b541-d95039854085")
 	)
 	(junction
-		(at 92.71 86.36)
+		(at 90.17 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "84e6c769-9379-4c1d-b929-e164d015c94c")
+		(uuid "dd2a690c-4983-4a2e-9632-dfe67b613fd7")
 	)
 	(wire
 		(pts
@@ -1061,16 +1059,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 86.36) (xy 101.6 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "229ba3b0-350e-4266-94c1-5d960a115c3e")
-	)
-	(wire
-		(pts
 			(xy 177.8 87.63) (xy 181.61 87.63)
 		)
 		(stroke
@@ -1078,6 +1066,16 @@
 			(type default)
 		)
 		(uuid "2583a27a-5810-4b01-93d6-98e8328739dd")
+	)
+	(wire
+		(pts
+			(xy 90.17 86.36) (xy 101.6 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b5b1ced-d841-4f5d-928d-5622a04067f9")
 	)
 	(wire
 		(pts
@@ -1101,6 +1099,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 78.74) (xy 90.17 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3da4e09a-bd58-446e-9045-a8f452fd8616")
+	)
+	(wire
+		(pts
 			(xy 184.15 85.09) (xy 184.15 90.17)
 		)
 		(stroke
@@ -1121,7 +1129,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 78.74) (xy 92.71 67.31)
+			(xy 92.71 67.31) (xy 92.71 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1141,13 +1149,13 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 81.28) (xy 92.71 81.28)
+			(xy 92.71 81.28) (xy 95.25 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7cf5dc26-2219-4587-9e0b-68bcf2d382f0")
+		(uuid "6e3ceccf-19f9-49b0-b4e6-02f6df21ec94")
 	)
 	(wire
 		(pts
@@ -1161,7 +1169,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 86.36) (xy 92.71 86.36)
+			(xy 77.47 86.36) (xy 90.17 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1171,7 +1179,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 81.28) (xy 92.71 86.36)
+			(xy 90.17 78.74) (xy 90.17 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1318,16 +1326,6 @@
 			(type default)
 		)
 		(uuid "dc5bae08-8be1-492f-b2dc-4985bde87ce6")
-	)
-	(wire
-		(pts
-			(xy 95.25 78.74) (xy 92.71 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8a5346c-67eb-4857-988b-69bb7afa6e13")
 	)
 	(wire
 		(pts
@@ -2974,7 +2972,7 @@
 		)
 	)
 	(label "sensorValue"
-		(at 78.74 86.36 0)
+		(at 77.47 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
