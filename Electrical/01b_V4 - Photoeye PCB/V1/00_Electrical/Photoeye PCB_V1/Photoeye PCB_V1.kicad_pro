@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.9,
-          "height": 1.62,
-          "width": 1.62
+          "height": 2.0,
+          "width": 2.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,11 +60,27 @@
       ],
       "drc_exclusions": [
         [
-          "silk_over_copper|134374562|100299167|f3fdacb6-ed69-4980-be39-f5fe21184f93|00000000-0000-0000-0000-000000000000",
+          "silk_over_copper|126817893|92267893|e14d3722-820f-4344-a0bc-f44f422f2bf3|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "starved_thermal|131500000|93137500|b5c5c045-0fac-4f4b-aad4-d5f9a01e66b7|b69daab6-598a-4e6c-94d2-62bd3ae00a28|F.Cu",
+          "silk_over_copper|126817893|98732107|97789fba-ff17-4285-9654-98975bea9ce3|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|127603056|97000908|446605d0-081d-49c2-8df7-04b527b4d414|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|130767893|92455393|d60920f8-5997-4959-9f73-545d8d56ac76|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|132499092|93240556|e38527a9-0738-426c-8b16-e2149177a6fe|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|137232107|92455393|50bdd150-fa98-43cf-a8ef-6779b0cd9531|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
@@ -96,8 +112,8 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_issues": "ignore",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -515,7 +531,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "C:/Users/kwhit/Desktop/projects/github Animation Platter V4/zoetrope-carousel-v4/Electrical/01b_V4 - Photoeye PCB/V1/01_Electrical Plots/gerbers/",
+      "plot": "C:/Users/kwhit/OneDrive/Desktop/Projects/Zoetrope Carousel Github Repo/zoetrope-carousel-v4/Electrical/01b_V4 - Photoeye PCB/V1/01_Electrical Plots/gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -626,7 +642,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "C:/Users/kwhit/Desktop/projects/github Animation Platter V4/zoetrope-carousel-v4/Electrical/01b_V4 - Photoeye PCB/V1/01_Electrical Plots/schematic/",
+    "plot_directory": "C:/Users/kwhit/OneDrive/Desktop/Projects/Zoetrope Carousel Github Repo/zoetrope-carousel-v4/Electrical/01b_V4 - Photoeye PCB/V1/01_Electrical Plots/schematic/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
