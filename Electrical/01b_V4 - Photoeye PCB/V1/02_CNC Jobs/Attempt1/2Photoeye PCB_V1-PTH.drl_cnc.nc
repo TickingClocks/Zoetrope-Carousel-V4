@@ -4,7 +4,7 @@
 (Type: G-code from Geometry)
 (Units: MM)
 
-(Created on Monday, 09 March 2026 at 15:18)
+(Created on Tuesday, 10 March 2026 at 17:30)
 
 (This preprocessor is the default preprocessor used by FlatCAM.)
 (It is made to work with MACH3 compatible motion controllers.)
@@ -23,8 +23,8 @@
 (Tool: 2 -> Feedrate Rapids: 1500)
 
 (Z_CUT: )
-(Tool: 1 -> Z_Cut: -1.9)
-(Tool: 2 -> Z_Cut: -1.9)
+(Tool: 1 -> Z_Cut: -2.0)
+(Tool: 2 -> Z_Cut: -2.0)
 
 (Tools Offset: )
 (Tool: 1 -> Offset Z: 0.0)
@@ -34,7 +34,7 @@
 (Tool: 1 -> Z_Move: 2.0)
 (Tool: 2 -> Z_Move: 2.0)
 
-(Z Toolchange: 20.0 mm)
+(Z Toolchange: 15 mm)
 (X,Y Toolchange: 0.0000, 0.0000 mm)
 (Z Start: None mm)
 (Z End: 0.5 mm)
@@ -53,62 +53,62 @@ G94
 G01 F30.00
 
 M5
-G00 Z20.0000
+G00 Z15.0000
 T1
 G00 X0.0000 Y0.0000                
 M6
 (MSG, Change to Tool Dia = 0.9000 ||| Total drills for tool T1 = 12)
 M0
-G00 Z20.0000
+G00 Z15.0000
 
 G01 F30.00
 M03 S10000
 G00 X12.5000 Y9.5000
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X17.5000 Y7.0000
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X22.5000 Y7.1620
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X22.5000 Y4.3620
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X25.0000 Y4.3620
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X25.0000 Y7.1620
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X37.0000 Y3.5000
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X37.0000 Y6.5000
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X26.5000 Y11.8620
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X24.0000 Y16.8630
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X21.5000 Y11.8620
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 G00 X17.5000 Y12.0000
-G01 Z-1.9000
+G01 Z-2.0000
 G01 Z0
 G00 Z2.0000
 M05

@@ -17,7 +17,7 @@
 		(uuid "48a07f44-afe6-4f75-b8db-94739bc2fd41")
 	)
 	(sheet
-		(at 207.01 68.58)
+		(at 207.01 54.61)
 		(size 24.13 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32,7 +32,7 @@
 		)
 		(uuid "0d547ffc-44e6-49d1-91af-d87b51f567ce")
 		(property "Sheetname" "NeoPixel LEDs"
-			(at 211.074 67.818 0)
+			(at 211.074 53.848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,7 +41,7 @@
 			)
 		)
 		(property "Sheetfile" "Display and LEDs.kicad_sch"
-			(at 207.01 81.8646 0)
+			(at 207.01 67.8946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,7 +51,7 @@
 			)
 		)
 		(property "Field2" "13"
-			(at 229.362 80.01 0)
+			(at 229.362 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67,7 +67,57 @@
 		)
 	)
 	(sheet
-		(at 233.68 68.58)
+		(at 207.01 127)
+		(size 24.13 13.97)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0e41a5d4-74a8-4029-8d4e-febea7e98f25")
+		(property "Sheetname" "External to PCB"
+			(at 210.82 126.492 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "External to PCB.kicad_sch"
+			(at 207.01 140.7926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "50"
+			(at 229.362 139.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "50")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 233.68 54.61)
 		(size 24.13 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -82,7 +132,7 @@
 		)
 		(uuid "1babb09c-3418-42a0-9f5a-33b9a7088d2e")
 		(property "Sheetname" "I2C"
-			(at 243.586 68.072 0)
+			(at 243.586 54.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -91,7 +141,7 @@
 			)
 		)
 		(property "Sheetfile" "I2C RTC.kicad_sch"
-			(at 233.68 83.1346 0)
+			(at 233.68 69.1646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -101,7 +151,7 @@
 			)
 		)
 		(property "Field2" "14"
-			(at 256.032 79.756 0)
+			(at 256.032 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -117,7 +167,7 @@
 		)
 	)
 	(sheet
-		(at 214.63 86.36)
+		(at 214.63 72.39)
 		(size 36.83 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -132,7 +182,7 @@
 		)
 		(uuid "40651ff0-c37d-4608-8bcc-873795bf4780")
 		(property "Sheetname" "ESP23 Displays"
-			(at 225.806 85.598 0)
+			(at 225.806 71.628 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -141,7 +191,7 @@
 			)
 		)
 		(property "Sheetfile" "ESP32 Displays.kicad_sch"
-			(at 214.63 99.6446 0)
+			(at 214.63 85.6746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -151,7 +201,7 @@
 			)
 		)
 		(property "Field2" "20"
-			(at 249.428 97.536 0)
+			(at 249.428 83.566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -167,7 +217,7 @@
 		)
 	)
 	(sheet
-		(at 213.36 33.02)
+		(at 213.36 19.05)
 		(size 36.83 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -182,7 +232,7 @@
 		)
 		(uuid "43dc24fa-5df0-45bf-bc45-3f2b9efdcc1f")
 		(property "Sheetname" "Main Microcontroller"
-			(at 231.902 32.258 0)
+			(at 231.902 18.288 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -191,7 +241,7 @@
 			)
 		)
 		(property "Sheetfile" "Microcontroller.kicad_sch"
-			(at 213.36 46.3046 0)
+			(at 213.36 32.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -201,7 +251,7 @@
 			)
 		)
 		(property "sheetNumber" "10"
-			(at 248.412 44.196 0)
+			(at 248.412 30.226 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -217,7 +267,57 @@
 		)
 	)
 	(sheet
-		(at 214.63 104.14)
+		(at 207.01 146.05)
+		(size 24.13 13.97)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6bfdc8a4-21db-4e29-943d-df977a459cde")
+		(property "Sheetname" "External to PCB 3"
+			(at 210.566 145.288 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "External to PCB 3.kicad_sch"
+			(at 207.01 159.8426 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "52"
+			(at 228.854 158.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "52")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 214.63 90.17)
 		(size 36.83 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -232,7 +332,7 @@
 		)
 		(uuid "78f2a9c1-35be-4926-bfa8-99d26f1ffdf7")
 		(property "Sheetname" "Power"
-			(at 229.362 103.632 0)
+			(at 229.362 89.662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -241,7 +341,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 214.63 118.1866 0)
+			(at 214.63 104.2166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -251,7 +351,7 @@
 			)
 		)
 		(property "Field2" "30"
-			(at 249.428 116.586 0)
+			(at 249.428 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -267,7 +367,57 @@
 		)
 	)
 	(sheet
-		(at 207.01 50.8)
+		(at 233.68 127)
+		(size 24.13 13.97)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cd984420-285a-4527-95be-ebc5ab434f9d")
+		(property "Sheetname" "External to PCB 2"
+			(at 237.236 126.492 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "External to PCB 2.kicad_sch"
+			(at 233.68 140.7926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" "51"
+			(at 256.032 138.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Animation Platter_V4"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "51")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 207.01 36.83)
 		(size 24.13 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -282,7 +432,7 @@
 		)
 		(uuid "dd4c35ab-e025-4cfe-9a78-605a270d4a30")
 		(property "Sheetname" "Motor & Strobe LEDs"
-			(at 209.296 49.784 0)
+			(at 209.296 35.814 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -291,7 +441,7 @@
 			)
 		)
 		(property "Sheetfile" "Motor & LEDs_sch.kicad_sch"
-			(at 207.01 64.0846 0)
+			(at 207.01 50.1146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -301,7 +451,7 @@
 			)
 		)
 		(property "Field2" "11"
-			(at 229.362 61.976 0)
+			(at 229.362 48.006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -317,7 +467,7 @@
 		)
 	)
 	(sheet
-		(at 214.63 121.92)
+		(at 214.63 107.95)
 		(size 38.1 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -332,7 +482,7 @@
 		)
 		(uuid "e7fa4b9b-7da5-430b-82c8-3eb99bf7d4d5")
 		(property "Sheetname" "Connectors"
-			(at 227.33 121.412 0)
+			(at 227.33 107.442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -341,7 +491,7 @@
 			)
 		)
 		(property "Sheetfile" "Connectors.kicad_sch"
-			(at 214.63 135.7126 0)
+			(at 214.63 121.7426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -351,7 +501,7 @@
 			)
 		)
 		(property "Field2" "40"
-			(at 250.698 134.62 0)
+			(at 250.698 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -367,7 +517,7 @@
 		)
 	)
 	(sheet
-		(at 233.68 50.8)
+		(at 233.68 36.83)
 		(size 24.13 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -382,7 +532,7 @@
 		)
 		(uuid "ffbe476a-0bba-4e7d-961a-247911f03fa9")
 		(property "Sheetname" "Interface"
-			(at 241.808 50.292 0)
+			(at 241.808 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -391,7 +541,7 @@
 			)
 		)
 		(property "Sheetfile" "Interface.kicad_sch"
-			(at 233.68 64.0846 0)
+			(at 233.68 50.1146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -401,7 +551,7 @@
 			)
 		)
 		(property "value" "12"
-			(at 256.032 62.23 0)
+			(at 256.032 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)

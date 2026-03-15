@@ -696,7 +696,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "G:/My Drive/Projects (GDrive)/32_The Animation Platter/Electrical Design/01b_V4 Electrical Plots/schematic/",
+    "plot_directory": "C:/Users/kwhit/Desktop/projects/github Animation Platter V4/zoetrope-carousel-v4/Electrical/01b_V4 Electrical Plots/schematic/",
     "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
@@ -744,6 +744,18 @@
     [
       "e7fa4b9b-7da5-430b-82c8-3eb99bf7d4d5",
       "Connectors"
+    ],
+    [
+      "0e41a5d4-74a8-4029-8d4e-febea7e98f25",
+      "External to PCB"
+    ],
+    [
+      "cd984420-285a-4527-95be-ebc5ab434f9d",
+      "External to PCB 2"
+    ],
+    [
+      "6bfdc8a4-21db-4e29-943d-df977a459cde",
+      "External to PCB 3"
     ]
   ],
   "text_variables": {}
