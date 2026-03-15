@@ -1,0 +1,68 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "295689e9-63ea-48a2-82eb-2003bac9134f")
+	(paper "A4")
+	(lib_symbols)
+	(text "Saber V1\n\nSaber is the LED spotlight on Zoetrope Carousel. The spotlight\nis many LEDs on the end of a gooseneck. at the base of the\ngooseneck is an XLR 3 pin Male connector.\n\nSaber runs on 12VDC. Pins 1 and 3 are shorted to activate\nthe strobe signal selection relay when Saber is plugged in.\n\nSaber has a filament of COB LEDs embeded on the back of the\nlight bar. The COB filament is warm white\n\nThe gooseneck and connector are from an Amazon product. The\nend effector is replaced with this PCB and a 3D print.\nThe original LED end effector was not nearly bright enough"
+		(exclude_from_sim no)
+		(at 18.796 63.754 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+			(justify left)
+		)
+		(uuid "f399debb-4bd1-405d-af1c-689dd272eb1d")
+	)
+	(sheet
+		(at 228.6 17.78)
+		(size 44.45 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "38b1f15e-6284-4a42-a6c0-d93f1c03e63f")
+		(property "Sheetname" "LEDs"
+			(at 228.6 17.0684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDs.kicad_sch"
+			(at 228.6 39.9546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Saber_V1"
+				(path "/295689e9-63ea-48a2-82eb-2003bac9134f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
