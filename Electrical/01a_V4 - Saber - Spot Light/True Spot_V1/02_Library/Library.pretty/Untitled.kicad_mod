@@ -1,0 +1,124 @@
+(footprint "Untitled"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "P**"
+		(at 0 -8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3f44661a-c596-44a7-8ba7-bcb15b38bc12")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "four pin, spring pin, magnet rotatating connector - pin side"
+		(at 0 -1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2b7a10eb-fe1c-4a9e-bedf-ea50e8461683")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e21b54ba-9b37-4f61-98c5-7183ba7f06f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df438968-e1d4-4fd2-ba60-8e8b6e03da97")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center 0 0)
+		(end 6 -3.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "41b560e0-383b-4a8c-a957-5a16b1356127")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 6.85 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "fbdac084-8511-4cdd-8f87-4c60bb385317")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "08e731a0-cb92-44aa-b26b-783f47475a89")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1 1)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5eb9ef4d-df1e-4c17-99d3-4dbeecb0d946")
+	)
+	(pad "2" thru_hole circle
+		(at 1.4 0)
+		(size 1 1)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "70922db4-768d-4d2c-8cbe-c82aac3e5b76")
+	)
+	(pad "3" thru_hole circle
+		(at -2.4 0)
+		(size 1 1)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "06d698a3-bbcc-4a06-87a2-780d21248465")
+	)
+	(pad "4" thru_hole circle
+		(at 3.4 0)
+		(size 1 1)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "22d1ef75-c9d0-49e4-b180-655ad8fd9d90")
+	)
+	(embedded_fonts no)
+)
