@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "9dc7c047-2c6a-403d-9fa8-c121ce9b5ca6")
 	(paper "A4")
 	(title_block
@@ -19,8 +19,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Jxxxx"
 				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -29,6 +33,8 @@
 			)
 			(property "Value" "Dupont 2x2"
 				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -37,47 +43,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Conn_01x04_1_1"
@@ -222,7 +238,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 10aec294-85dd-4ef1-bc7c-ca250935e9b6)
+		(uuid "10aec294-85dd-4ef1-bc7c-ca250935e9b6")
 	)
 	(rectangle
 		(start 101.6 102.87)
@@ -234,7 +250,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 383a77b4-2b9c-441f-ba6a-9dc558193545)
+		(uuid "383a77b4-2b9c-441f-ba6a-9dc558193545")
 	)
 	(rectangle
 		(start 17.78 114.3)
@@ -246,7 +262,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 575ed67b-786b-4f76-8ccc-dceabf023c85)
+		(uuid "575ed67b-786b-4f76-8ccc-dceabf023c85")
 	)
 	(rectangle
 		(start 182.372 115.57)
@@ -258,7 +274,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 58cf4101-61c1-4672-856a-984f808cce52)
+		(uuid "58cf4101-61c1-4672-856a-984f808cce52")
 	)
 	(rectangle
 		(start 50.8 102.87)
@@ -270,7 +286,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 5e78d2ee-4d94-4d9c-8116-7bbfc33f9b0a)
+		(uuid "5e78d2ee-4d94-4d9c-8116-7bbfc33f9b0a")
 	)
 	(rectangle
 		(start 182.372 102.87)
@@ -282,7 +298,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 5f84d427-4d4c-40ac-9bc8-ed8b2860b627)
+		(uuid "5f84d427-4d4c-40ac-9bc8-ed8b2860b627")
 	)
 	(rectangle
 		(start 132.08 102.87)
@@ -294,7 +310,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 61c2fccd-f5e4-4e08-a879-742457c00c6b)
+		(uuid "61c2fccd-f5e4-4e08-a879-742457c00c6b")
 	)
 	(rectangle
 		(start 50.8 90.17)
@@ -306,7 +322,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 84e4b87f-e1f2-43a7-85c6-947cba6ea6ce)
+		(uuid "84e4b87f-e1f2-43a7-85c6-947cba6ea6ce")
 	)
 	(rectangle
 		(start 132.08 90.17)
@@ -318,7 +334,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 8540aee9-17db-4633-b0a5-cd64d965df9a)
+		(uuid "8540aee9-17db-4633-b0a5-cd64d965df9a")
 	)
 	(rectangle
 		(start 243.332 44.45)
@@ -330,7 +346,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 8f9c013c-96cd-4f2f-83e1-d8b16942584e)
+		(uuid "8f9c013c-96cd-4f2f-83e1-d8b16942584e")
 	)
 	(rectangle
 		(start 17.78 102.87)
@@ -342,7 +358,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 9298ad5a-7123-416b-9231-2a2896d1a37e)
+		(uuid "9298ad5a-7123-416b-9231-2a2896d1a37e")
 	)
 	(rectangle
 		(start 101.6 115.57)
@@ -354,7 +370,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 958b0eb3-1c93-46e5-b94a-da599d0da456)
+		(uuid "958b0eb3-1c93-46e5-b94a-da599d0da456")
 	)
 	(rectangle
 		(start 208.28 57.15)
@@ -366,7 +382,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 98b22a83-6ce7-441a-9b0a-09b853e06e98)
+		(uuid "98b22a83-6ce7-441a-9b0a-09b853e06e98")
 	)
 	(rectangle
 		(start 132.08 115.57)
@@ -378,7 +394,7 @@
 		(fill
 			(type none)
 		)
-		(uuid b94dd396-88e2-4752-a917-afee8fdb4d1c)
+		(uuid "b94dd396-88e2-4752-a917-afee8fdb4d1c")
 	)
 	(rectangle
 		(start 182.372 128.27)
@@ -390,7 +406,7 @@
 		(fill
 			(type none)
 		)
-		(uuid be09f90f-ea4e-4a36-b2d7-c4ab7139d065)
+		(uuid "be09f90f-ea4e-4a36-b2d7-c4ab7139d065")
 	)
 	(rectangle
 		(start 182.372 90.17)
@@ -402,7 +418,7 @@
 		(fill
 			(type none)
 		)
-		(uuid cee9446b-2518-462c-bd95-e71831fc90cf)
+		(uuid "cee9446b-2518-462c-bd95-e71831fc90cf")
 	)
 	(rectangle
 		(start 101.6 90.17)
@@ -414,7 +430,7 @@
 		(fill
 			(type none)
 		)
-		(uuid ddfce4dc-89b9-450b-a6cf-95a499845ca8)
+		(uuid "ddfce4dc-89b9-450b-a6cf-95a499845ca8")
 	)
 	(text "ST"
 		(exclude_from_sim no)
@@ -18928,12 +18944,14 @@
 		(uuid "2841d20b-cc3c-4dea-93c5-184443306adf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 218.44 32.6958 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -18950,12 +18968,14 @@
 		(uuid "d9982c91-0123-41af-98ee-faf82ba5225d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 220.98 32.6958 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -18963,13 +18983,17 @@
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 21.59 127 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "521d03bb-c640-4ab6-8ddf-5b1aa7c2d193")
 		(property "Reference" "J1000"
 			(at 22.098 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18978,6 +19002,8 @@
 		)
 		(property "Value" "Dupont 2x2"
 			(at 25.146 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18986,29 +19012,35 @@
 		)
 		(property "Footprint" ""
 			(at 21.59 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 21.59 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 21.59 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -19024,7 +19056,7 @@
 			(uuid "3e537647-842a-4f97-b8a3-d4a3590cfc76")
 		)
 		(instances
-			(project ""
+			(project "Animation Platter_V4"
 				(path "/6293f612-ad61-4760-ad66-c804a0624dd1/6bfdc8a4-21db-4e29-943d-df977a459cde"
 					(reference "J1000")
 					(unit 1)
