@@ -5,6 +5,18 @@
 	(uuid "0761a9b3-5f4b-4c5f-af4c-9bc817d3be21")
 	(paper "A4")
 	(lib_symbols)
+	(text "Second version of the Powered Platter design\n\nV1 was functional and came to gether well. It had a few key flaws that had to be addressed\n	-The microcontroller used did not have adequate memory to control the neopixels as I wanted\n	 I quickly ran into memory issues and limitations that are not worth the tiny form factor\n\n	-The small traces did resolve when milling with the CNC, however, traces that were thin and\n	 long were very easily damaged when soldering. This caused extra bodge wires and was  an \n	 unpleasant assembly experience. Increase size of traces whenever possible\n\n	-This version is not going to include Neopizels, even though the upgraded microcontroller\n	 included in this version has the memory to support them. I'm replacing the Neoplades with\n	 LED blades that use 3mm through-hole LEDs. This increases the connections and limits the\n	 color output of the generated display. The benefit is simplified timing.\n		-Consider breaking out a connection for the LEDs if possible\n\nV2 includes an upgraded microcontroller - STM32C071KBT6 - with much more memory and I/O. \n\nHardware notes\n	-V1 was too thick for the standard thumb screw\n	-cuttout for wires below was not deep enough"
+		(exclude_from_sim no)
+		(at 21.336 104.648 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "7709d9cc-7763-43e3-9d83-21d610a8032c")
+	)
 	(sheet
 		(at 233.68 50.8)
 		(size 43.18 21.59)
