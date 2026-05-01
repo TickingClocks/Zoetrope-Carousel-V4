@@ -1,0 +1,180 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "6293f612-ad61-4760-ad66-c804a0624dd1")
+	(paper "A4")
+	(lib_symbols)
+	(text "Animation Platter\n\nThis project is inspired by zoatropes. \n\nA NEMA17 stepper motor is used to spin an animation platter.\nAbove the animation platter is an array of many bright LEDs.\nThe LEDs provide the \"stroboscopic effect\" by strobing the\nlights at a frequency based on the frame count on the animation\nplatter.\n\nThe NEMA17 is driven by a TMC2209 silent stepper driver. The \ndriver is controlled simply via the enable, step and direction\npins.\n\nThe LEDs are driven by a mosfet. The output connector is supplied \nwith +12V supplied by VRx. There is also a neopixel output that\ncan be used for the strobe lights. The connector extends the \nneopixel line that already exists on the PCB.\n\nThe microcontroller on board is a STM32xxxxxxxxx. This was to \nmake transfering the code developed with a nucleo board easier.\n\nInterfacing with the system is done with three toggle switches,\nan encoder with a button, a potentiometer and a button. Status\nis indicated with several Neopixels and a four-digit seven-segment\ndisplay."
+		(exclude_from_sim no)
+		(at 22.606 92.202 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+			(justify left)
+		)
+		(uuid "48a07f44-afe6-4f75-b8db-94739bc2fd41")
+	)
+	(sheet
+		(at 243.586 19.812)
+		(size 36.322 17.526)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "43dc24fa-5df0-45bf-bc45-3f2b9efdcc1f")
+		(property "Sheetname" "Microcontroller"
+			(at 243.586 19.1004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Microcontroller.kicad_sch"
+			(at 243.586 37.9226 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Animation Platter_V1"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 242.57 85.344)
+		(size 36.576 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "78f2a9c1-35be-4926-bfa8-99d26f1ffdf7")
+		(property "Sheetname" "Power"
+			(at 242.57 84.6324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 242.57 103.7086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Animation Platter_V1"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 242.824 63.246)
+		(size 36.322 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dd4c35ab-e025-4cfe-9a78-605a270d4a30")
+		(property "Sheetname" "Motor & Strobe LEDs"
+			(at 242.824 62.5344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Motor & LEDs_sch.kicad_sch"
+			(at 242.824 81.6106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Animation Platter_V1"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 243.078 40.894)
+		(size 36.068 18.034)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ffbe476a-0bba-4e7d-961a-247911f03fa9")
+		(property "Sheetname" "Interface"
+			(at 243.078 40.1824 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Interface.kicad_sch"
+			(at 243.078 59.5126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Animation Platter_V1"
+				(path "/6293f612-ad61-4760-ad66-c804a0624dd1"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

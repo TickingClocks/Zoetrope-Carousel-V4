@@ -1,0 +1,32 @@
+# ===== Large CAD / 3D Files =====
+*.stl
+#*.step
+*.3mf
+
+# ===== Archives =====
+*.zip
+*.rar
+*.7z
+
+# ===== Firmware / Build Outputs =====
+*.bin
+*.elf
+*.map
+*.hex
+
+# ===== Build Folders =====
+Debug/
+Release/
+build/
+
+# ===== IDE Files =====
+.vscode/
+.settings/
+.metadata/
+
+# ===== OS Files =====
+Thumbs.db
+.DS_Store
+
+# ==== KiCAD V10 garbage =====
+#.history #enable later if needed

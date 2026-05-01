@@ -1,0 +1,213 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "5bf8c182-6712-4c5f-8f3c-2d1ac15da381")
+	(paper "A4")
+	(lib_symbols)
+	(text "MCU Board for the Basic Pixels Powered Zoetrope Platter\n\nThis board has a STM32 microcontroller at its heart\n\nPower is passed to the platter via 2.54 male headers. a female connector on the goosenek\nslipring connects into the header.\n\nA sensor is used to detect the rotation speed and index point of the rotating platter.\nThe sensor is a on the other PCB and single connection is passed to this board\n\nThere are two, five pin connections on two ends of this PCB. These are connections to the\ntwo neopixel strip boards that act as the display. On one of these boards an optical sensor \nis mounted for rotation speed sensing and indexing of the platter\n\nThere is a single SMT LED on this PCB to act as a heartbeat/debug LED. It may be incorperated\ninto animations if desired\n\nThis board, to start, is square. Each edge is tangent to the platter coupler"
+		(exclude_from_sim no)
+		(at 18.796 56.388 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "ed6a7c9b-160a-4344-a16c-fcafd3ab2170")
+	)
+	(sheet
+		(at 241.3 78.74)
+		(size 39.37 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2bbffaf8-354c-4eb2-a4da-637f29d38db7")
+		(property "Sheetname" "Connectors"
+			(at 241.3 78.0284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 241.3 98.3746 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Basic Pixels_MCU PCB_V1.0"
+				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 241.3 104.14)
+		(size 39.37 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2de99927-2ab6-4386-99cd-9faa9e60f1be")
+		(property "Sheetname" "Level Shifting"
+			(at 241.3 103.4284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Level Shifting.kicad_sch"
+			(at 241.3 126.3146 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Basic Pixels_MCU PCB_V1.0"
+				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 241.3 48.26)
+		(size 39.37 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "63aeb854-45b7-4d8e-878e-86a1025ceafa")
+		(property "Sheetname" "Power"
+			(at 241.3 47.5484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 241.3 71.7046 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Basic Pixels_MCU PCB_V1.0"
+				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 241.3 19.05)
+		(size 39.37 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a7119e10-46cc-4987-b15f-422baf51b51a")
+		(property "Sheetname" "MCU"
+			(at 241.3 18.3384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 241.3 42.4946 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Basic Pixels_MCU PCB_V1.0"
+				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "pixelPlatter") (type "KiCad") (uri "C:/Users/kwhit/Desktop/projects/github Animation Platter V4/zoetrope-carousel-v4/Electrical/01c_V4 - Powered Platters/01_Basic 2D Neopixel Platter/03_Library/Footprints") (options "") (descr ""))
+)

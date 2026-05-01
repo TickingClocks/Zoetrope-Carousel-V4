@@ -1,0 +1,155 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "0761a9b3-5f4b-4c5f-af4c-9bc817d3be21")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 233.68 50.8)
+		(size 43.18 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "06721ecd-84aa-463e-9037-7e66f359a2de")
+		(property "Sheetname" "Power"
+			(at 233.68 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 233.68 72.9746 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 233.68 21.59)
+		(size 43.18 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c9a39c0f-114c-48dd-93c1-3d4481e7f058")
+		(property "Sheetname" "MCU"
+			(at 233.68 20.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 233.68 45.0346 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 233.68 80.01)
+		(size 43.18 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f89db518-4946-41a1-b9fe-586b4ed3d85b")
+		(property "Sheetname" "Connectors"
+			(at 233.68 79.2984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 233.68 102.1846 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

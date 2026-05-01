@@ -1,0 +1,97 @@
+(footprint "3mm jumper"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 1.5 -2.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "70f44bd4-8297-4f40-adbd-5a26f47afe22")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "3mm jumper"
+		(at 0.5 -4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6ee8dec6-90b0-46ab-961f-0923c1cf439d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "57573e3b-b815-49b1-a9c4-50078ad02609")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "basic jumper"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d29db3d1-051d-4014-9694-191900da932c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2 -1.5)
+		(end 4.5 1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "704282fc-07a8-45c5-928a-c957a18b956c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "03272dfa-c57a-4d17-98df-0cfaab518090")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.62 1.62)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "89947af6-1195-4f2d-be4a-ee7c0ad3fd99")
+	)
+	(pad "2" thru_hole circle
+		(at 3 0)
+		(size 1.62 1.62)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "180bb7f2-0fd5-4922-bb6a-46484f520a35")
+	)
+	(embedded_fonts no)
+)

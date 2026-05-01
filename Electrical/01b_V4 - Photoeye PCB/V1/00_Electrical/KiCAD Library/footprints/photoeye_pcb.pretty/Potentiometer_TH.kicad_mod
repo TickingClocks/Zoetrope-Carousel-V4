@@ -1,0 +1,215 @@
+(footprint "Potentiometer_TH"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Potentiometer, horizontal, ACP CA6-H2,5, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf")
+	(tags "Potentiometer horizontal ACP CA6-H2,5")
+	(property "Reference" "REF**"
+		(at 0 -2.06 0)
+		(layer "F.SilkS")
+		(uuid "f3f01354-ece1-4af3-a9e8-9abae8dff62e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Potentiometer_TH"
+		(at 0 7.06 0)
+		(layer "F.Fab")
+		(uuid "723dea22-dee5-4457-8e9f-cfa757a4edb0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a1f56c33-66d2-4ec5-b247-aa2cd34d5548")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "954baf08-129b-4bd5-8481-3ababc5bb938")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -0.11 1.39)
+		(end 3.61 1.39)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f5e04adf-abd2-45a0-9c9a-9ca34b246b15")
+	)
+	(fp_line
+		(start -0.11 3.61)
+		(end -0.11 1.39)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "408866e3-f8cc-4884-90e6-52b6a6e42400")
+	)
+	(fp_line
+		(start -0.11 3.966)
+		(end -0.11 1.034)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b1e04194-fe29-4a38-ab80-5d9a36a01d28")
+	)
+	(fp_line
+		(start 0.71 -0.76)
+		(end 3.61 -0.76)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "264f9117-52c5-4aca-8e20-d6bb6fa7c8c9")
+	)
+	(fp_line
+		(start 3.61 -0.76)
+		(end 3.61 5.76)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "140cb8b4-18df-48f9-9541-ad7dc830fb5b")
+	)
+	(fp_line
+		(start 3.61 1.39)
+		(end 3.61 3.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ac8ed04d-2b1a-4009-b3ee-3b3e3b4a5eba")
+	)
+	(fp_line
+		(start 3.61 3.61)
+		(end -0.11 3.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c664c4c0-216f-45a4-aebf-93c321b130ed")
+	)
+	(fp_line
+		(start 3.61 5.76)
+		(end 0.71 5.76)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e664766f-e16a-45ac-bdba-5abe092dd674")
+	)
+	(fp_rect
+		(start -1.06 -1.06)
+		(end 3.76 6.06)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "de2754f9-60ce-42b8-942c-0102c29144ed")
+	)
+	(fp_rect
+		(start 0 -0.65)
+		(end 3.5 5.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ab1b22e1-5cbe-45f1-97fd-6bc317c03ca7")
+	)
+	(fp_rect
+		(start 0 1.5)
+		(end 3.5 3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "602ea9c5-dca5-4b54-8bf7-8af63709290f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.75 2.5 0)
+		(layer "F.Fab")
+		(uuid "f2a232f2-6aff-42ea-8b74-72195f2a481f")
+		(effects
+			(font
+				(size 0.78 0.78)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.62 1.62)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "85877fd9-3ff2-4a03-806b-b29450b87fd8")
+	)
+	(pad "2" thru_hole circle
+		(at 5 2.5)
+		(size 1.62 1.62)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e3b02170-b594-4d09-a7c0-be2cf3f4260a")
+	)
+	(pad "3" thru_hole circle
+		(at 0 5)
+		(size 1.62 1.62)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7e39782e-37a1-412c-a00e-8d7c5751cd1f")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_ACP_CA6-H2,5_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

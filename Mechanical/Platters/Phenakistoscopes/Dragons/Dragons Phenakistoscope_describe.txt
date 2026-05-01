@@ -1,0 +1,20 @@
+Print at 100% infill with a layer height of 0.08mm with a base layer of 0.16mm
+
+ The Model is 200x199.15mm in size
+ You may print at higher layer heights below the Min Depth of 0.48mm
+ The Max Depth is 3mm and the Actual Depth is 3.1mm
+
+Filaments Used:
+	PETG JAYO Black Transmission Distance: 0.3
+	PLA BambuLab Basic Red Transmission Distance: 4
+	PLA BambuLab Basic BambuLab Green Transmission Distance: 2
+	PETG JAYO White Transmission Distance: 6
+This print uses 4 unique filaments
+
+!!!!  It appears you have mixed filament types.  Be certain this is what you want.  !!!!!
+
+Swap Instructions:
+	Start with Black
+	At layer #21 (1.76mm) swap to Red
+	At layer #28 (2.32mm) swap to BambuLab Green
+	At layer #34 (2.8mm) swap to White for the rest.

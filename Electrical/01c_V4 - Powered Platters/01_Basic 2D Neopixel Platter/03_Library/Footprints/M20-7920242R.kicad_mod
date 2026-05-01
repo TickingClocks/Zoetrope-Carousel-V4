@@ -1,0 +1,273 @@
+(footprint "M20-7920242R"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "M20-7920242R-4")
+	(tags "Connector")
+	(property "Reference" "J2"
+		(at 2.71 2.01 270)
+		(layer "F.SilkS")
+		(uuid "31d41a87-fd25-49c3-ac06-64e45290fdbf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "M20-7920242R"
+		(at 20.828 -9.7536 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "724469fe-ea87-408d-a260-5059e9c8c636")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn.harwin.com/pdfs/M20-792R.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "49e1e01b-f23f-4fd8-9598-f3f03bcf0f91")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2.54mm (0.1\") Pitch DIL Horizontal SMT Socket Assembly, selective gold + tin (Tape & Reel packing), 2+2 contacts"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "917bc158-942e-4b41-9aa6-64ccac21e33c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c18a0855-6440-4d3c-b9a3-298dd86c6c59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "855-M20-7920242R"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8aef05e-be36-45e5-be4f-fa12bcbe7950")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-7920242R?qs=k41KVqW3ymqXpU6ZyqY%252B2g%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4324fa63-467c-4ee6-871b-574d0e876178")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Harwin"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "029c58a1-8fbc-4407-b419-0d572470f446")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "M20-7920242R"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "abd45d37-54a8-4ea0-a0d4-550b5fdfc1e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/Main Microcontroller/")
+	(sheetfile "Microcontroller.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 2.665 0.900001)
+		(end -2.665 0.900001)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a256c431-7672-4d31-b714-2e20c9f6e7eb")
+	)
+	(fp_line
+		(start -3.665 -8.6)
+		(end 3.665 -8.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a1e4f484-442c-4168-9b15-5fca872ae4b2")
+	)
+	(fp_line
+		(start -3.665 9.6)
+		(end -3.665 -8.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "caac77c3-89ba-4677-ac5b-31ec52638921")
+	)
+	(fp_line
+		(start 3.665 -8.6)
+		(end 3.665 9.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6b4563e9-5e57-4216-86d1-01448f0a778f")
+	)
+	(fp_line
+		(start 3.665 9.6)
+		(end -3.665 9.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "744ee654-b841-42b2-befc-cf10abc9eb24")
+	)
+	(fp_line
+		(start -2.665 -7.6)
+		(end -2.665 0.900001)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b8f3fabf-b753-47cc-a1e2-856b103abead")
+	)
+	(fp_line
+		(start -2.665 0.900001)
+		(end 2.665 0.900001)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b96b8f6b-e744-4ae2-8fc8-6fef3825a521")
+	)
+	(fp_line
+		(start -1.27 4.1)
+		(end -1.270001 0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "736c735a-ec07-4bd4-b40b-f0742753f74a")
+	)
+	(fp_line
+		(start 1.27 4.1)
+		(end 1.270001 0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5c7dc172-94f6-43e6-b114-80bbe725e580")
+	)
+	(fp_line
+		(start 2.665 0.900001)
+		(end 2.665 -7.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1444475d-1c97-4c2d-a0c8-be15d38ed38d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0.499999 180)
+		(layer "F.Fab")
+		(uuid "20c4e6f0-e4d7-466d-90ac-9d6b0287a116")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.27 7.6)
+		(size 1 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "99c8fc62-0fb0-46d4-9218-c4e4d592a487")
+	)
+	(pad "2" smd rect
+		(at -1.27 4.1)
+		(size 1 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7ad2b97b-ebe2-48c7-8601-c7c39f70ad36")
+	)
+	(pad "3" smd rect
+		(at 1.27 7.6)
+		(size 1 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6850c253-7866-4f7d-9240-ecca93814b9d")
+	)
+	(pad "4" smd rect
+		(at 1.27 4.1)
+		(size 1 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5e171e4d-9867-43d6-aeca-4635049bf9d6")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/packages3D/M20-7920242R.stp"
+		(offset
+			(xyz -1.299999933 2.999999955 2.499999962)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+)

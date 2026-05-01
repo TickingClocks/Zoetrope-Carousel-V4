@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "saber connector board")(type "KiCad")(uri "${KIPRJMOD}/Library/saber connector board.pretty")(options "")(descr ""))
+)
