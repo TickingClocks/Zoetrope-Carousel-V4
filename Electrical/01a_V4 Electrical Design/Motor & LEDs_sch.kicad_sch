@@ -2981,7 +2981,7 @@
 	)
 	(text "BLDC Motor Controller Interface"
 		(exclude_from_sim no)
-		(at 72.644 119.888 0)
+		(at 72.898 117.348 0)
 		(effects
 			(font
 				(size 2 2)
@@ -3005,7 +3005,7 @@
 	)
 	(text "BLDC\nPower"
 		(exclude_from_sim no)
-		(at 113.03 128.524 0)
+		(at 113.284 125.984 0)
 		(effects
 			(font
 				(size 2 2)
@@ -3017,7 +3017,7 @@
 	)
 	(text "BLCD\ncommunication"
 		(exclude_from_sim no)
-		(at 80.518 128.27 0)
+		(at 80.772 125.73 0)
 		(effects
 			(font
 				(size 2 2)
@@ -3082,7 +3082,7 @@
 		(uuid "ab91004e-e7f9-4ec6-8c8c-967a5dee5b12")
 	)
 	(junction
-		(at 139.7 134.62)
+		(at 152.4 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef6b1f37-a057-4ba5-bfee-5a5b4661c08d")
@@ -3115,7 +3115,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 149.86) (xy 125.73 152.4)
+			(xy 138.43 149.86) (xy 138.43 152.4)
 		)
 		(stroke
 			(width 0)
@@ -3175,7 +3175,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 149.86) (xy 125.73 149.86)
+			(xy 142.24 149.86) (xy 138.43 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3595,7 +3595,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 134.62) (xy 125.73 137.16)
+			(xy 138.43 134.62) (xy 138.43 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3625,7 +3625,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 134.62) (xy 125.73 134.62)
+			(xy 142.24 134.62) (xy 138.43 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3665,7 +3665,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 134.62) (xy 139.7 134.62)
+			(xy 147.32 134.62) (xy 152.4 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3725,7 +3725,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 134.62) (xy 139.7 149.86)
+			(xy 152.4 134.62) (xy 152.4 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3755,7 +3755,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 149.86) (xy 139.7 149.86)
+			(xy 147.32 149.86) (xy 152.4 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3925,7 +3925,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 134.62) (xy 139.7 130.81)
+			(xy 152.4 134.62) (xy 152.4 130.81)
 		)
 		(stroke
 			(width 0)
@@ -6697,7 +6697,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small")
-		(at 132.08 149.86 270)
+		(at 144.78 149.86 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6707,7 +6707,7 @@
 		(dnp no)
 		(uuid "182134b6-800c-48d2-831c-636903084c9f")
 		(property "Reference" "C33"
-			(at 132.08 153.416 90)
+			(at 144.78 153.416 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6717,7 +6717,7 @@
 			)
 		)
 		(property "Value" "865080553014"
-			(at 130.81 146.304 90)
+			(at 143.51 146.304 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6727,7 +6727,7 @@
 			)
 		)
 		(property "Footprint" "Footprint drive Dump 1:865080553014"
-			(at 132.08 149.86 0)
+			(at 144.78 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6738,7 +6738,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 149.86 0)
+			(at 144.78 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6749,7 +6749,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
-			(at 132.08 149.86 0)
+			(at 144.78 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6937,7 +6937,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 139.7 130.81 0)
+		(at 152.4 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6947,7 +6947,7 @@
 		(dnp no)
 		(uuid "2882ba5c-f888-4af6-904a-8cacd70ef757")
 		(property "Reference" "#PWR0186"
-			(at 139.7 134.62 0)
+			(at 152.4 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6958,7 +6958,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 139.7 125.984 0)
+			(at 152.4 125.984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6968,7 +6968,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 130.81 0)
+			(at 152.4 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6979,7 +6979,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 130.81 0)
+			(at 152.4 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6990,7 +6990,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 139.7 130.81 0)
+			(at 152.4 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7577,7 +7577,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 125.73 152.4 0)
+		(at 138.43 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7588,7 +7588,7 @@
 		(fields_autoplaced yes)
 		(uuid "5cae1348-599d-4233-9723-973d99ee277e")
 		(property "Reference" "#PWR0184"
-			(at 125.73 158.75 0)
+			(at 138.43 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7599,7 +7599,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 156.5331 0)
+			(at 138.43 156.5331 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7609,7 +7609,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 152.4 0)
+			(at 138.43 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7620,7 +7620,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 152.4 0)
+			(at 138.43 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7631,7 +7631,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 152.4 0)
+			(at 138.43 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7738,7 +7738,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 125.73 137.16 0)
+		(at 138.43 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7749,7 +7749,7 @@
 		(fields_autoplaced yes)
 		(uuid "6ccbc653-4599-4082-b0af-4d5c1782f12d")
 		(property "Reference" "#PWR0182"
-			(at 125.73 143.51 0)
+			(at 138.43 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7760,7 +7760,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 141.2931 0)
+			(at 138.43 141.2931 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7770,7 +7770,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 137.16 0)
+			(at 138.43 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7781,7 +7781,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 137.16 0)
+			(at 138.43 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7792,7 +7792,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 137.16 0)
+			(at 138.43 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7975,7 +7975,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small")
-		(at 132.08 134.62 270)
+		(at 144.78 134.62 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7985,7 +7985,7 @@
 		(dnp no)
 		(uuid "98f71b03-2dd0-4ee1-88a4-90e6063708dd")
 		(property "Reference" "C32"
-			(at 132.08 138.176 90)
+			(at 144.78 138.176 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7995,7 +7995,7 @@
 			)
 		)
 		(property "Value" "865080553014"
-			(at 130.81 131.064 90)
+			(at 143.51 131.064 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8005,7 +8005,7 @@
 			)
 		)
 		(property "Footprint" "Footprint drive Dump 1:865080553014"
-			(at 132.08 134.62 0)
+			(at 144.78 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8016,7 +8016,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 134.62 0)
+			(at 144.78 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8027,7 +8027,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
-			(at 132.08 134.62 0)
+			(at 144.78 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

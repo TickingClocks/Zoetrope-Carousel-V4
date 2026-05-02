@@ -60,40 +60,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_issues|128000000|70012500|010f1df5-5a80-4b9e-8b5d-0cd330f4ce7c|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|132500000|105500000|45905057-101b-4c2a-9d78-3833bf93ff15|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|140000000|105500000|4779a127-ad03-412b-9451-5b014abf9a61|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|143500000|65625000|48bce51d-05f2-4300-a465-ba16c9faa136|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|154000000|105500000|40f1af85-40eb-4a73-9932-b49cf2dab9e4|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|167000000|111000000|ecf021b9-8a43-4149-9a72-6068849bdd9a|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|142960000|95500000|ee7d4ffe-d809-492b-8256-34fa8a25b4d7|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "track_dangling|124692078|68321605|bf786fad-384d-43f5-9c53-eb4cbdea5957|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -564,7 +531,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Personal Projects/Zoetrope Carousel/zoetrope-carousel-v4/Electrical/01c_V4 - Powered Platters/02_Basic 2D Platter_V2/01_PCB Plots/gerbers and drills/",
       "specctra_dsn": "",
       "vrml": ""
     },
