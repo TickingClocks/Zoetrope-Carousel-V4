@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "01af541f-7b6d-4a00-9e5f-256bfffc62ae")
+	(uuid "9e61bd25-2f77-4b75-89fd-ce792e46ad5f")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"
@@ -821,7 +821,7 @@
 	)
 	(text "3.3V to 5V Level Shifter"
 		(exclude_from_sim no)
-		(at 132.334 76.2 0)
+		(at 125.984 72.39 0)
 		(effects
 			(font
 				(size 2 2)
@@ -829,133 +829,133 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "bb85dd17-ad23-469c-a9a8-df91d0e2c788")
+		(uuid "221757da-2213-4814-81be-aa762aa1ddd0")
 	)
 	(junction
-		(at 149.86 87.63)
+		(at 143.51 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8a0d1b79-99c4-400e-a9e7-6dfdeea88354")
+		(uuid "e5673f81-4214-41f6-bead-7b20474023d1")
 	)
 	(no_connect
-		(at 160.02 106.68)
-		(uuid "22f4be00-f2dd-4183-93e4-7b3b642d6222")
+		(at 133.35 100.33)
+		(uuid "3ef021d2-d6d3-4098-bad6-55154ba6b79c")
 	)
 	(no_connect
-		(at 160.02 104.14)
-		(uuid "30bd32c2-1af7-45bb-a66d-63a9e92455bc")
+		(at 133.35 102.87)
+		(uuid "610adde4-8d42-49e9-9dc4-addc8b438e36")
 	)
 	(no_connect
-		(at 139.7 104.14)
-		(uuid "8799804f-6754-4234-b7ae-4ac9d36e6c89")
+		(at 153.67 100.33)
+		(uuid "da21e2cb-a515-47e9-95f0-c553c7b0f302")
 	)
 	(no_connect
-		(at 139.7 106.68)
-		(uuid "ae0776d5-8851-4594-a3dc-e0f7c76b0b33")
+		(at 153.67 102.87)
+		(uuid "e8f35268-2037-4bac-b0df-48f965a605a3")
 	)
 	(wire
 		(pts
-			(xy 133.35 87.63) (xy 139.7 87.63)
+			(xy 143.51 83.82) (xy 143.51 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20cbdfae-3b98-452e-b06c-43d1f9e5fa16")
+		(uuid "16dd545c-2825-4bcb-aa55-7135a7ed377f")
 	)
 	(wire
 		(pts
-			(xy 149.86 87.63) (xy 149.86 95.25)
+			(xy 114.3 97.79) (xy 119.38 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3767534c-42ec-461a-808c-cbf512dfb27d")
+		(uuid "2a048e54-1a7d-4e7c-8925-c97e0e7895ba")
 	)
 	(wire
 		(pts
-			(xy 147.32 87.63) (xy 149.86 87.63)
+			(xy 143.51 107.95) (xy 143.51 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "411b5a55-8ba9-47f9-9b0b-ce9132927fb6")
+		(uuid "6eb9a580-2d8f-4c60-8377-3770480c5024")
 	)
 	(wire
 		(pts
-			(xy 149.86 111.76) (xy 149.86 115.57)
+			(xy 140.97 83.82) (xy 143.51 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e7518ce-4fbd-4f12-b867-8388496e434d")
+		(uuid "8959f9e8-25bb-4d11-9d41-e2ef9e7f9ce0")
 	)
 	(wire
 		(pts
-			(xy 149.86 85.09) (xy 149.86 87.63)
+			(xy 127 87.63) (xy 127 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7a89aa1c-2afd-44f4-a045-2e41d8404896")
+		(uuid "8e0cb0f6-ceb7-4fb8-99b3-42b82d0b40b1")
 	)
 	(wire
 		(pts
-			(xy 160.02 101.6) (xy 167.64 101.6)
+			(xy 127 83.82) (xy 133.35 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "907dad12-db17-49f3-9c83-b12a34fb97ee")
+		(uuid "ae6d9463-116b-40ca-ab4d-e2b74b9eb434")
 	)
 	(wire
 		(pts
-			(xy 120.65 101.6) (xy 125.73 101.6)
+			(xy 143.51 81.28) (xy 143.51 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94e85542-240d-4229-af03-e95fe121d3fb")
+		(uuid "bac878b1-089b-4c1a-bbaa-c0534c30c728")
 	)
 	(wire
 		(pts
-			(xy 133.35 101.6) (xy 139.7 101.6)
+			(xy 168.91 97.79) (xy 177.8 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9cf47b76-55b2-4423-9be2-ea754a39ef7a")
+		(uuid "c990255f-2b75-4be2-b8ad-a5f0a26b7173")
 	)
 	(wire
 		(pts
-			(xy 175.26 101.6) (xy 184.15 101.6)
+			(xy 127 97.79) (xy 133.35 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e1b37443-4644-4c0e-bbf7-bb3e7b5deb85")
+		(uuid "d2909e6c-9b15-40e8-9f68-d4f8753396e0")
 	)
 	(wire
 		(pts
-			(xy 133.35 91.44) (xy 133.35 87.63)
+			(xy 153.67 97.79) (xy 161.29 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fa9393e0-609c-4df1-a9e0-341cfb5a1000")
+		(uuid "e6b70b70-4657-4501-853d-5b82425721e8")
 	)
 	(global_label "neopixels_3v3"
 		(shape input)
-		(at 120.65 101.6 180)
+		(at 114.3 97.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -963,9 +963,9 @@
 			)
 			(justify right)
 		)
-		(uuid "2f6bb3b0-4d76-4c52-ae47-f6b0b9a98f0b")
+		(uuid "04c215b4-f22a-43f0-953d-1596f2f22f47")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.3602 101.6 0)
+			(at 98.0102 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -979,7 +979,7 @@
 	)
 	(global_label "neopixels_5v"
 		(shape output)
-		(at 184.15 101.6 0)
+		(at 177.8 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -987,9 +987,9 @@
 			)
 			(justify left)
 		)
-		(uuid "90035714-25ff-4b00-b645-2a5779374b73")
+		(uuid "8e24c6c9-071c-4018-b754-cc279c5cadd3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.2303 101.6 0)
+			(at 192.8803 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1003,7 +1003,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 115.57 0)
+		(at 143.51 111.76 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -1012,9 +1012,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "1e36db40-5419-4297-b347-59f37e62ab6a")
+		(uuid "03a5827a-6371-42cf-8d1d-db4eaeb19ba7")
 		(property "Reference" "#PWR056"
-			(at 149.86 121.92 0)
+			(at 143.51 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1025,7 +1025,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.828 119.126 0)
+			(at 141.478 115.316 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1036,7 +1036,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 115.57 0)
+			(at 143.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1047,7 +1047,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 115.57 0)
+			(at 143.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1058,7 +1058,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 115.57 0)
+			(at 143.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1069,11 +1069,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f3219d7f-7575-44b8-9180-eda3ec4d8db1")
+			(uuid "7c6e198f-d605-4e39-b0c1-da2adefaad28")
 		)
 		(instances
-			(project "Basic Pixels_MCU PCB_V1.0"
-				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381/2de99927-2ab6-4386-99cd-9faa9e60f1be"
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21/d5ebe026-222b-4f77-8cc8-9477a81bc899"
 					(reference "#PWR056")
 					(unit 1)
 				)
@@ -1081,346 +1081,8 @@
 		)
 	)
 	(symbol
-		(lib_id "HDD_CLK_V6.0:74HC3G34DC")
-		(at 149.86 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2d5492f1-d0f4-41fe-8c4b-1beedcac1f4f")
-		(property "Reference" "U2"
-			(at 153.162 95.758 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC3G34DC"
-			(at 158.496 110.998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PixelPlatter:74HC3G34DC"
-			(at 156.21 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://drive.google.com/file/d/16EibTxNWkPvnAx-BvzO5nn8JsdT_xJQ6/view?usp=drive_link"
-			(at 156.21 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 149.86 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "db5eb3c7-bda6-437b-827e-571d3d069056")
-		)
-		(pin "2"
-			(uuid "333a6bec-73b1-41a3-87a9-ce2916e39e74")
-		)
-		(pin "3"
-			(uuid "a4477f6b-19c2-4b0d-a5ae-8d637a9415a5")
-		)
-		(pin "4"
-			(uuid "46b33af7-c106-4ec7-8e53-6ed9450b90f1")
-		)
-		(pin "5"
-			(uuid "ac9c1946-0b85-40e3-bb50-005a1181e2a4")
-		)
-		(pin "6"
-			(uuid "f65edc09-6c67-4b92-b617-ddf4658c18da")
-		)
-		(pin "7"
-			(uuid "e8322361-a557-450f-af58-1855ad2fd8d5")
-		)
-		(pin "8"
-			(uuid "34791536-88c0-4fe3-a9be-6f1d945bc769")
-		)
-		(instances
-			(project "Basic Pixels_MCU PCB_V1.0"
-				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381/2de99927-2ab6-4386-99cd-9faa9e60f1be"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 171.45 101.6 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5690ad44-79a9-46dc-a890-5bd51c9cb1f4")
-		(property "Reference" "R25"
-			(at 171.45 99.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "300ohm_0603"
-			(at 171.45 104.14 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 171.196 102.616 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 171.45 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc4d6b98-2edc-4619-9763-883fec2f3051")
-		)
-		(pin "2"
-			(uuid "d8e7e232-f525-4878-8c58-540683de83d2")
-		)
-		(instances
-			(project "Basic Pixels_MCU PCB_V1.0"
-				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381/2de99927-2ab6-4386-99cd-9faa9e60f1be"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 129.54 101.6 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "63cf11f0-80ad-4db2-91d8-3c9518029e1a")
-		(property "Reference" "R18"
-			(at 129.54 99.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "300ohm_0603"
-			(at 129.54 104.14 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 129.286 100.584 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8e4f3c25-55a0-4689-a6bc-d369720f2d66")
-		)
-		(pin "2"
-			(uuid "7c4fba0a-89e6-4dd1-ad57-25f24693dffe")
-		)
-		(instances
-			(project "Basic Pixels_MCU PCB_V1.0"
-				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381/2de99927-2ab6-4386-99cd-9faa9e60f1be"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 143.51 87.63 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9ed3d003-e9cf-44ac-b6e1-496e0af1aa2e")
-		(property "Reference" "C21"
-			(at 141.478 83.82 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF_0603"
-			(at 135.89 91.44 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 139.7 88.5952 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c3761b98-bc35-49b3-bc83-b31396256064")
-		)
-		(pin "2"
-			(uuid "72c8875f-3942-4858-94cd-f448968e7233")
-		)
-		(instances
-			(project "Basic Pixels_MCU PCB_V1.0"
-				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381/2de99927-2ab6-4386-99cd-9faa9e60f1be"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
-		(at 149.86 85.09 0)
+		(at 143.51 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1429,9 +1091,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b8211521-01f8-4068-9a17-4ed41c644152")
+		(uuid "061aaa83-c84f-41aa-9660-b923db31027a")
 		(property "Reference" "#PWR055"
-			(at 149.86 88.9 0)
+			(at 143.51 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1442,7 +1104,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 149.86 81.5881 0)
+			(at 143.51 77.7781 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1452,7 +1114,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 85.09 0)
+			(at 143.51 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1463,7 +1125,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 85.09 0)
+			(at 143.51 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1474,7 +1136,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 85.09 0)
+			(at 143.51 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1485,11 +1147,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "48b21c61-2a45-4395-bb49-43343417fad3")
+			(uuid "4c69a7f4-d404-4344-b6a3-30217e002b57")
 		)
 		(instances
-			(project "Basic Pixels_MCU PCB_V1.0"
-				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381/2de99927-2ab6-4386-99cd-9faa9e60f1be"
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21/d5ebe026-222b-4f77-8cc8-9477a81bc899"
 					(reference "#PWR055")
 					(unit 1)
 				)
@@ -1497,8 +1159,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 133.35 91.44 0)
+		(lib_id "Device:C")
+		(at 137.16 83.82 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1506,9 +1168,188 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "de86fa9b-3e2a-40bb-984b-d6493031f43b")
+		(uuid "1f385184-3153-4610-b9e6-5328f2b9bbc6")
+		(property "Reference" "C21"
+			(at 135.128 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF_0603"
+			(at 129.54 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 133.35 84.7852 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b113b77-74d5-43f1-88de-9b90cb4bd26c")
+		)
+		(pin "2"
+			(uuid "97d4c716-2152-40c1-90b9-3d13f50bfb32")
+		)
+		(instances
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21/d5ebe026-222b-4f77-8cc8-9477a81bc899"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HDD_CLK_V6.0:74HC3G34DC")
+		(at 143.51 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6a581451-bccf-43e3-9f30-e5c3a0832e73")
+		(property "Reference" "U3"
+			(at 146.812 91.948 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC3G34DC"
+			(at 152.146 107.188 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PixelPlatter:74HC3G34DC"
+			(at 149.86 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://drive.google.com/file/d/16EibTxNWkPvnAx-BvzO5nn8JsdT_xJQ6/view?usp=drive_link"
+			(at 149.86 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "817bb8a7-c3b0-4689-b26d-1d2c5f1c27f0")
+		)
+		(pin "2"
+			(uuid "5688a54f-41cf-404d-bcb5-22123f117b63")
+		)
+		(pin "3"
+			(uuid "1a16dea0-1a11-4432-b032-e9d885e39520")
+		)
+		(pin "4"
+			(uuid "e5a38a19-c96e-4398-80e0-bb56c5c6308f")
+		)
+		(pin "5"
+			(uuid "cddcb7b2-785c-438e-b2c4-b6e079e2b659")
+		)
+		(pin "6"
+			(uuid "16a5e82a-9dc5-4c58-835d-ca5cd132bfa2")
+		)
+		(pin "7"
+			(uuid "c544ea78-3c75-4a93-b8e6-f3fcf8f83386")
+		)
+		(pin "8"
+			(uuid "96660fac-7678-46f0-9d35-b449953e370b")
+		)
+		(instances
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21/d5ebe026-222b-4f77-8cc8-9477a81bc899"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "70988c12-e741-473e-bb5d-9109643b9757")
 		(property "Reference" "#PWR013"
-			(at 133.35 97.79 0)
+			(at 127 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1519,7 +1360,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.382 94.996 0)
+			(at 129.032 91.186 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1530,7 +1371,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 91.44 0)
+			(at 127 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1541,7 +1382,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 91.44 0)
+			(at 127 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1552,7 +1393,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 91.44 0)
+			(at 127 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1563,12 +1404,171 @@
 			)
 		)
 		(pin "1"
-			(uuid "c9e0b627-1df8-4497-b0e9-add3e1abd3be")
+			(uuid "e2b1418e-72a5-4287-983a-419d2a8f5a23")
 		)
 		(instances
-			(project "Basic Pixels_MCU PCB_V1.0"
-				(path "/5bf8c182-6712-4c5f-8f3c-2d1ac15da381/2de99927-2ab6-4386-99cd-9faa9e60f1be"
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21/d5ebe026-222b-4f77-8cc8-9477a81bc899"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 123.19 97.79 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eaf4648e-6c1f-409a-b04e-839d60e70d83")
+		(property "Reference" "R18"
+			(at 123.19 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "300ohm_0603"
+			(at 123.19 100.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 122.936 96.774 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08c89682-5c55-4e9d-9c03-3219c79eaf54")
+		)
+		(pin "2"
+			(uuid "f1f0d330-48b4-4cb9-b99f-847cda3b046b")
+		)
+		(instances
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21/d5ebe026-222b-4f77-8cc8-9477a81bc899"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 165.1 97.79 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f39aee7e-4a61-408f-ad24-09708edd45a4")
+		(property "Reference" "R25"
+			(at 165.1 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "300ohm_0603"
+			(at 165.1 100.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 164.846 98.806 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2c0e1a1a-e0bf-4bc4-bba4-340fb96c3aee")
+		)
+		(pin "2"
+			(uuid "83c2fa70-c074-4f5c-800a-e0f8039a03c7")
+		)
+		(instances
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21/d5ebe026-222b-4f77-8cc8-9477a81bc899"
+					(reference "R25")
 					(unit 1)
 				)
 			)

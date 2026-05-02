@@ -112,6 +112,53 @@
 		)
 	)
 	(sheet
+		(at 233.68 106.68)
+		(size 43.18 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d5ebe026-222b-4f77-8cc8-9477a81bc899")
+		(property "Sheetname" "level shifting"
+			(at 233.68 105.9684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "level shifting.kicad_sch"
+			(at 233.68 127.5846 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PoweredPlatter2_MainBoard_V1"
+				(path "/0761a9b3-5f4b-4c5f-af4c-9bc817d3be21"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 233.68 80.01)
 		(size 43.18 21.59)
 		(exclude_from_sim no)
