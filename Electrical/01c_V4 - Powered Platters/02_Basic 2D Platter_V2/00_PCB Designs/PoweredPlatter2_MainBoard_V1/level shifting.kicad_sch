@@ -831,6 +831,19 @@
 		)
 		(uuid "221757da-2213-4814-81be-aa762aa1ddd0")
 	)
+	(text "Populate later if Neopixels are ran\nSaving the effort for now"
+		(exclude_from_sim no)
+		(at 113.03 124.714 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+				(color 255 45 76 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5b65055-fb1f-4af7-8812-0d1416c861e5")
+	)
 	(junction
 		(at 143.51 83.82)
 		(diameter 0)
@@ -1167,7 +1180,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1f385184-3153-4610-b9e6-5328f2b9bbc6")
 		(property "Reference" "C21"
 			(at 135.128 80.01 90)
@@ -1248,7 +1261,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6a581451-bccf-43e3-9f30-e5c3a0832e73")
 		(property "Reference" "U3"
 			(at 146.812 91.948 0)
@@ -1425,7 +1438,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "eaf4648e-6c1f-409a-b04e-839d60e70d83")
 		(property "Reference" "R18"
 			(at 123.19 95.25 90)
@@ -1504,7 +1517,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f39aee7e-4a61-408f-ad24-09708edd45a4")
 		(property "Reference" "R25"
 			(at 165.1 95.25 90)

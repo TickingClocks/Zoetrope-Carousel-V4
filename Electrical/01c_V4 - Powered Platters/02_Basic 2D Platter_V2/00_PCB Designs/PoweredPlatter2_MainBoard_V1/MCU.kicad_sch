@@ -2453,6 +2453,19 @@
 		)
 		(uuid "8688fff9-fb41-491a-ac37-5b1e5b78d18f")
 	)
+	(text "DNP - Traces broke during CNC milling\nUse internal oscilator to save the headache"
+		(exclude_from_sim no)
+		(at 185.42 67.056 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.25)
+				(color 255 85 93 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "86b358f3-2ab8-4909-8fcf-00b4edc1fffe")
+	)
 	(text "STM32 Microcontroller"
 		(exclude_from_sim no)
 		(at 67.31 52.832 0)
@@ -5754,7 +5767,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "128bc025-2b23-49fc-ae13-efce362de5c1")
 		(property "Reference" "C2"
 			(at 222.25 90.17 90)
@@ -6781,7 +6794,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "55cee066-0cd3-46b8-89ff-c46277d97f69")
 		(property "Reference" "C3"
 			(at 201.93 99.06 90)
@@ -7596,7 +7609,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d2273141-9368-42a8-b2ac-0ad178677932")
 		(property "Reference" "Y1"
 			(at 201.295 85.09 90)
