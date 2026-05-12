@@ -70,11 +70,11 @@ uint8_t idleModeAnimationMaxIndex = 7; //max animation index value before trigge
 //display variables
 uint16_t display[150][7]; //values for each LED in the array X x Y, indexed bottom left corner
 uint16_t frameCount = 150; //one frame for each column in the display
-uint16_t blade2FrameOffset = 75;
+uint16_t blade2FrameOffset = 75; //used for second strip of LEDs
 uint16_t frameIndex = 0; //what is the frame currently displayed
 uint16_t prevFrameIndex = 0; //for tracking when frame index changes - prevent unnecessary updates
 uint8_t frameTurnedOff = 0; //ensure the lights are not on too long - controls motion blur (flag to indicate if the lights have been turned off)
-uint32_t frameOnTime = 200; //how long should the LEDs be on for - us
+uint32_t frameOnTime = 1; //how long should the LEDs be on for - us
 uint32_t frameTime = 0; //indexing time for each frame - rotation time / frames, converted from ms to us
 uint32_t frameIndexTime = 0; //for timing reasons - control when to turn the LEDs OFF
 /* USER CODE END PV */
@@ -96,6 +96,10 @@ void idleModeAnimationControl(uint8_t index); //control of the LEDs in idle mode
 
 void displayControl(void); //controls LEDs to create the display
 void displayLEDControl(uint8_t frame); // sets appropriate LEDS ON for the current frame
+
+void clearDisplayArray(void);
+
+void displaySet_HelloWorld(void);
 
 void scrappyTesting(void); //to test things without making a mess
 /* USER CODE END PFP */
@@ -148,15 +152,8 @@ int main(void)
   //set all blade LEDs to OFF
   resetBlades();
 
-  for(uint8_t k=0; k<7; k++){
-    display[10][k] = 1; //turn on one pixel to test the system
-  }
-  display[11][3] = 1;
-  display[12][3] = 1;
-  display[13][3] = 1;
-  for(uint8_t k=0; k<7; k++){
-    display[14][k] = 1; //turn on one pixel to test the system
-  }
+  //set display to "Hello World"
+  displaySet_HelloWorld();
   
   /*
   //turning all the pixels ON
@@ -423,7 +420,7 @@ void displayRuntime(uint8_t modeSelection){
     break;
     case 1: //spinning, stroboscopic display mode
       //so something
-      resetBlades(); //turn off LEDs - for now
+      //resetBlades(); //turn off LEDs - for now
       displayControl(); //control LEDs for the display
     break;
     case 2: //error mode
@@ -461,7 +458,7 @@ void displayLEDControl(uint8_t frame){
 
   uint16_t blade2Frame = 0;
 
-  if(frame > blade2FrameOffset){
+  if(frame >= blade2FrameOffset){ //this is setting the second strip of LEDs - need to handle rollover
     //handle rollover
     blade2Frame = (frame + blade2FrameOffset) - frameCount;
   }else{
@@ -472,17 +469,20 @@ void displayLEDControl(uint8_t frame){
   //we set the LEDs that need to be on for the current frame - there is one frame for each column of the display
   
   if(frame < frameCount){
+    
     //blade 1
     HAL_GPIO_WritePin(led1_GPIO_Port, led1_Pin, display[frame][0]); //led 1, bottom row
     HAL_GPIO_WritePin(led2_GPIO_Port, led2_Pin, display[frame][1]); //led 2
     HAL_GPIO_WritePin(led3_GPIO_Port, led3_Pin, display[frame][2]); //led 3
     HAL_GPIO_WritePin(led4_GPIO_Port, led4_Pin, display[frame][3]); //led 4
     HAL_GPIO_WritePin(led5_GPIO_Port, led5_Pin, display[frame][4]); //led 5
-    HAL_GPIO_WritePin(led6_GPIO_Port, led6_Pin, display[frame][4]); //led 6
-    HAL_GPIO_WritePin(led7_GPIO_Port, led7_Pin, display[frame][4]); //led 7
+    HAL_GPIO_WritePin(led6_GPIO_Port, led6_Pin, display[frame][5]); //led 6
+    HAL_GPIO_WritePin(led7_GPIO_Port, led7_Pin, display[frame][6]); //led 7
+
   }
   
   if(blade2Frame < frameCount){
+
     //blade 2 - 180 offset from blade 1, offset on display by 1/2 of display - 75 pixels. Need to also handle wrap around
     HAL_GPIO_WritePin(led14_GPIO_Port, led14_Pin, display[blade2Frame][0]); //led 14, bottom row, 180 out from blade 1, 75 pixels offset from blade 1
     HAL_GPIO_WritePin( led13_GPIO_Port, led13_Pin, display[blade2Frame][1]); //led 13
@@ -491,8 +491,9 @@ void displayLEDControl(uint8_t frame){
     HAL_GPIO_WritePin( led10_GPIO_Port, led10_Pin, display[blade2Frame][4]); //led 10
     HAL_GPIO_WritePin( led9_GPIO_Port, led9_Pin, display[blade2Frame][5]); //led 9
     HAL_GPIO_WritePin( led8_GPIO_Port, led8_Pin, display[blade2Frame][6]); //led 8
-  }
 
+  }
+    
 }
 
 void idleMode(void){
@@ -593,6 +594,185 @@ void resetBlades(void){
   HAL_GPIO_WritePin(led12_GPIO_Port, led12_Pin, 0);
   HAL_GPIO_WritePin(led13_GPIO_Port, led13_Pin, 0);
   HAL_GPIO_WritePin(led14_GPIO_Port, led14_Pin, 0);
+}
+
+void displaySet_HelloWorld(void){
+
+  uint8_t startIndex = 10; //where does Hello World start on the display
+
+  //set the display array to say "Hello World"
+  //first clear the display
+  clearDisplayArray();
+
+  //resetBlades();
+
+  //H
+  for(uint8_t k=0; k<7; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][3] = 1;
+  startIndex++;
+  display[startIndex][3] = 1;
+  startIndex++;
+  display[startIndex][3] = 1;
+  startIndex++;
+  for(uint8_t k=0; k<7; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex+=2; //add extra space after character
+
+  //e
+  for(uint8_t k=1; k<4; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][1] = 0;
+  display[startIndex][2] = 1;
+  display[startIndex][3] = 0;
+  display[startIndex][4] = 1;
+  display[startIndex][5] = 0;
+  display[startIndex][6] = 0;
+  display[startIndex][7] = 0;
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][2] = 1;
+  display[startIndex][4] = 1;
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][2] = 1;
+  display[startIndex][3] = 1;
+  startIndex+=2; //add extra space after character
+
+  //l
+  display[startIndex][0] = 1;
+  display[startIndex][6] = 1;
+  startIndex++;
+  for(uint8_t k=0; k<7; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  startIndex+=2; //add extra space between characters
+
+  //l
+  display[startIndex][0] = 1;
+  display[startIndex][6] = 1;
+  startIndex++;
+  for(uint8_t k=0; k<7; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  startIndex+=2; //add extra space between characters
+
+  //o
+  for(uint8_t k=1; k<4; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][4] = 1;
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][4] = 1;
+  startIndex++;
+  for(uint8_t k=1; k<4; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex+=2; //add extra space between characters
+
+  startIndex+=4; //add extra space between words
+
+  //W
+  for(uint8_t k=1; k<7; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  startIndex++;
+  display[startIndex][0] = 1;
+  startIndex++;
+  for(uint8_t k=1; k<5; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  startIndex++;
+  display[startIndex][0] = 1;
+  startIndex++;
+  for(uint8_t k=1; k<7; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex+=2; //add extra space between characters
+
+  //o
+  for(uint8_t k=1; k<4; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][4] = 1;
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][4] = 1;
+  startIndex++;
+  for(uint8_t k=1; k<4; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex+=2; //add extra space between characters
+
+  //r
+  for(uint8_t k=0; k<5; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][4] = 1;
+  startIndex++;
+  display[startIndex][4] = 1;
+  startIndex++;
+  display[startIndex][4] = 1;
+  startIndex++;
+  display[startIndex][3] = 1;
+  startIndex+=2; //add extra space between characters
+
+  //l
+  display[startIndex][0] = 1;
+  display[startIndex][6] = 1;
+  startIndex++;
+  for(uint8_t k=0; k<7; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  startIndex+=2; //add extra space between characters
+
+  //d
+  for(uint8_t k=1; k<4; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][4] = 1;
+  startIndex++;
+  display[startIndex][0] = 1;
+  display[startIndex][4] = 1;
+  startIndex++;
+  for(uint8_t k=0; k<7; k++){
+    display[startIndex][k] = 1; //turn on one pixel to test the system
+  }
+
+
+}
+
+void clearDisplayArray(void){
+  //clearing the entire display array
+  for(uint8_t k=0; k<frameCount; k++){
+    for(uint8_t e=0; e<7; e++){
+      display[k][e] = 0;
+    }
+  }
 }
 
 //for fast testing stuff
