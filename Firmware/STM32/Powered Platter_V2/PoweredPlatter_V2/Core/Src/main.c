@@ -57,7 +57,7 @@ uint32_t strobeSignalLastTime = 0; //for signal timing (reading)
 uint32_t strobeSignalPeriodTime = 2000; //period between signal pulses, set to large value to default to idle mode
 uint32_t strobeSignalRunningCounter = 0; //running timer so we can jump to idle mode if needed
 
-uint32_t rotationRunningModeCuttoff = 500; //how fast does the platter need to spin to go to running mode
+uint32_t rotationRunningModeCuttoff = 750; //how fast does the platter need to spin to go to running mode
 uint8_t mode = 0; //0=idle, 1=running, 2=error
 
 //idle mode variables
@@ -74,7 +74,7 @@ uint16_t blade2FrameOffset = 75; //used for second strip of LEDs
 uint16_t frameIndex = 0; //what is the frame currently displayed
 uint16_t prevFrameIndex = 0; //for tracking when frame index changes - prevent unnecessary updates
 uint8_t frameTurnedOff = 0; //ensure the lights are not on too long - controls motion blur (flag to indicate if the lights have been turned off)
-uint32_t frameOnTime = 1; //how long should the LEDs be on for - us
+uint32_t frameOnTime = 8; //how long should the LEDs be on for - us
 uint32_t frameTime = 0; //indexing time for each frame - rotation time / frames, converted from ms to us
 uint32_t frameIndexTime = 0; //for timing reasons - control when to turn the LEDs OFF
 /* USER CODE END PV */
