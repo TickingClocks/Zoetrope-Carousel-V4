@@ -587,7 +587,8 @@ long map(long x, long in_min, long in_max, long out_min, long out_max){
 
 //basic zoetope GPIO control and sensing
 void hall1_readAndMeasure(system_interface *sys){
-    uint32_t currentTime_us = TIM5->CNT; //check microsecond timer - set prescaler to 45-1 for microseconds
+    uint32_t currentTime_maxSpeed = TIM5->CNT; //updated so timer5 is running faster than 1us per cycle
+    //uint32_t currentTime_us = TIM5->CNT; //check microsecond timer - set prescaler to 45-1 for microseconds
     //uint32_t currentTime_ms = HAL_GetTick(); //note current time coming into function - used for period measurement
     uint8_t prevhallSensor1State = 0;
 
@@ -601,9 +602,11 @@ void hall1_readAndMeasure(system_interface *sys){
         //sensor state has changed
         if(sys->hallSensor1 == 0){ //falling edge detected - signal is active high
             //calculate the period since the last rising edge
-            sys->hallSensor1Period_us = currentTime_us - sys->hallSensor1LastTime_us;
-            sys->hallSensor1LastTime_us = currentTime_us; //update the last time variable
-            sys->platterRotationPeriod_us = sys->hallSensor1Period_us; //for now, platter period == hall sensor period
+            sys->hallSensor1Period_us = currentTime_maxSpeed - sys->hallSensor1LastTime_us; //not actually us, update this later
+            //sys->hallSensor1Period_us = currentTime_us - sys->hallSensor1LastTime_us;
+            //sys->hallSensor1LastTime_us = currentTime_us; //update the last time variable
+            sys->hallSensor1LastTime_us = currentTime_maxSpeed; //update the last time variable
+            sys->platterRotationPeriod_us = sys->hallSensor1Period_us; //for now, platter period == hall sensor period || not actually us, update this later
             zoetrope_calculateFramePeriod(sys); //calculate the frame pulse period using system variables
             sys->strobePWMCalculateRequired = 1; //flag to recalculate strobe PWM settings -- do in interrupt in future
         }
@@ -612,6 +615,10 @@ void hall1_readAndMeasure(system_interface *sys){
 
 
 void zoetrope_calculateFramePeriod(system_interface *sys){
+    //this isnt us right now, its faster - UPDATE THE VARIABLE NAMES
+
+
+
     //calculate the frame pulse period using system variables
     sys->sliceTime_us = sys->platterRotationPeriod_us / sys->sliceCount;
     //calculate the slice OFF time based on the current slice ON time setting
@@ -879,7 +886,7 @@ void strobe_calculatePWMValues(system_interface *sys){
     float calculateDenominator = 0.0;
 
     //sliceTime_s = sys->sliceTime_ms / 1000.0; //convert slice time to seconds - float for accuracy (important)
-    sliceTime_s = sys->sliceTime_us / 1000000.0; //convert slice time to seconds - float for accuracy (important)
+    sliceTime_s = sys->sliceTime_us / (1000000.0 * 45.0); //convert slice time to seconds - float for accuracy (important)
     pwmFrequency = 1.0 / sliceTime_s; //calculate desired PWM frequency in Hz
     calculateDenominator = (pwmFrequency) * sys->strobeARRValue; //calculate denominator for PSC calculation (not fully sure why the /2.0 is needed but it is)
     sys->strobePSCValue = sys->strobeSrcClockValue / calculateDenominator; //calculate PSC value
@@ -1329,7 +1336,7 @@ void zoetrope_motorModeSelection(system_interface *sys){
                     sys->motor_enable = sys->motor_enable_switch;
                 }
                  
-                sys->sliceTime_ms = sys->sliceTime_us / 1000; //convert (we measure in uS now)
+                sys->sliceTime_ms = sys->sliceTime_us / (1000 * 45); //convert (we measure in uS now)
                 if(sys->sliceTime_ms < 93){ //prevent seizures 
                     sys->strobeEnabled = sys->strobe_enable_switch;
                 }else{
@@ -1897,7 +1904,7 @@ void zoetrope_applyNFCSettings(system_interface *sys){
 }
 
 void zoetrope_HALLSensorInterruptHandler2(system_interface *sys){
-    uint32_t currentTime = TIM5->CNT; //check microsecond timer
+    uint32_t currentTime = TIM5->CNT; //check microsecond timer || THIS IS FASTER THAN MICROSECONDS NOW
 
     if(currentTime > 1000000){
         sys->hallSensor1Period_us = currentTime - sys->hallSensor1LastTime_us; //set prescaler to 45-1 for microseconds
@@ -1927,11 +1934,11 @@ void zoetrope_HALLSensorInterruptHandler(system_interface *sys){
         //if(sys->hallSensor1 == 1){ //rising edge detected
             //calculate the period since the last rising edge
             sys->hallSensor1Period_us = currentTime_us - sys->hallSensor1LastTime_us;
-            if(sys->platterRotationPeriod_us < 1000000){
+            if(sys->platterRotationPeriod_us < (1000000 * 45)){
                 //are we spinning at least this fast?
 
-                if(sys->platterRotationPeriod_us < 300000){
-                    if(sys->hallSensor1Period_us > 50000){ //debounce the sensor a bit
+                if(sys->platterRotationPeriod_us < (300000 * 45)){
+                    if(sys->hallSensor1Period_us > (50000 * 45)){ //debounce the sensor a bit
                         //sys->hallSensor1LastTime_us = currentTime_us; //update the last time variable
                         sys->platterRotationPeriod_us = sys->hallSensor1Period_us; //for now, platter period == hall sensor period
                         zoetrope_calculateFramePeriod(sys); //calculate the frame pulse period using system variables
@@ -1942,7 +1949,7 @@ void zoetrope_HALLSensorInterruptHandler(system_interface *sys){
                     }
                 }else{
                     //need a bigger debounce time at medium speeds
-                    if(sys->hallSensor1Period_us > 200000){ //debounce the sensor a bit
+                    if(sys->hallSensor1Period_us > (200000 * 45)){ //debounce the sensor a bit
                         //sys->hallSensor1LastTime_us = currentTime_us; //update the last time variable
                         sys->platterRotationPeriod_us = sys->hallSensor1Period_us; //for now, platter period == hall sensor period
                         zoetrope_calculateFramePeriod(sys); //calculate the frame pulse period using system variables
@@ -1955,7 +1962,7 @@ void zoetrope_HALLSensorInterruptHandler(system_interface *sys){
                 
             }else{
                 //need a bigger debounce time at low speeds
-                if(sys->hallSensor1Period_us > 750000){ //debounce the sensor a bit
+                if(sys->hallSensor1Period_us > (750000 * 45)){ //debounce the sensor a bit
                     //sys->hallSensor1LastTime_us = currentTime_us; //update the last time variable
                     sys->platterRotationPeriod_us = sys->hallSensor1Period_us; //for now, platter period == hall sensor period
                     zoetrope_calculateFramePeriod(sys); //calculate the frame pulse period using system variables

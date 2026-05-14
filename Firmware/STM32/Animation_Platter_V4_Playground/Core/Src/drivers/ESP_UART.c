@@ -63,7 +63,7 @@ void buildTestPacket(system_interface *sys){
     //the test buffer is a pre-set sequence of bytes for testing - it is sent into other functions as the sent data
     uart_tx_TEST_buffer[0] = sys->sliceCount; //THIS LINE ONLY, THE VALUE CONSTANTLY CHANGES - DONT REMOVE, BUT DONT USE ON ESP SIDE??
     uart_tx_TEST_buffer[1] = sys->system_state; //system state
-    sys->platterRotationPeriod_ms = sys->platterRotationPeriod_us / 1000; //convert to ms for sending
+    sys->platterRotationPeriod_ms = sys->platterRotationPeriod_us / (1000 * 45); //convert to ms for sending
     uart_tx_TEST_buffer[2] = (uint8_t)(sys->platterRotationPeriod_ms & 0xFF); //platter rotation period LSB
     uart_tx_TEST_buffer[3] = (uint8_t)((sys->platterRotationPeriod_ms >> 8) & 0xFF); //platter rotation period
     uart_tx_TEST_buffer[4] = (uint8_t)((sys->platterRotationPeriod_ms >> 16) & 0xFF); //platter rotation period
